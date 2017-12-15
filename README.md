@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a side project I am currently working to integrate with the setlist API. This app is a precursor to a bigger app that I would like to make. The goal of this application is to learn the ins and outs of the Setlist API.
 
-Things you may want to cover:
 
-* Ruby version
+clone down this repo and run
 
-* System dependencies
+```
+bundle install
+rails s
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
