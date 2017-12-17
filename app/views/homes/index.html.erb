@@ -1,13 +1,16 @@
-<li> Tour <%= @dead["setlists"]['setlist'].last["@tour"] %> </li>
-<li> Date <%= @dead["setlists"]['setlist'].last['@eventDate'] %> </li>
-<li> Venue <%= @dead["setlists"]['setlist'].last["venue"]['@name']%> </li>
-<li><%= @dead["setlists"]['setlist'].last['sets']['set'][0]['@name'] %></li>
-<% @dead["setlists"]['setlist'].last['sets']['set'][0]['song'].each do |song| %>
-  <li> <%= song['@name'] %></li>
-<% end %>
-<li><%= @dead["setlists"]['setlist'].last['sets']['set'][1]['@name'] %></li>
-<% @dead["setlists"]['setlist'].last['sets']['set'][1]['song'].each do |song| %>
-  <li> <%= song['@name'] %></li>
-<% end %>
-<li>encore</li>
-<%= @dead["setlists"]['setlist'].last['sets']['set'][2]['song']['@name'] %>
+
+<div>
+  <li> Tour <%= @dead["setlists"]['setlist'].last["@tour"] %> </li>
+  <li> Date <%= @dead["setlists"]['setlist'].last['@eventDate'] %> </li>
+  <li> Venue <%= @dead["setlists"]['setlist'].last["venue"]['@name']%> </li>
+  <li><%= @dead["setlists"]['setlist'].last['sets']['set'][0]['@name'] %></li>
+  <% @dead["setlists"]['setlist'].last['sets']['set'][0]['song'].each do |song| %>
+    <li> <%= song['@name'] %></li>
+  <% end %>
+  <li><%= @dead["setlists"]['setlist'].last['sets']['set'][1]['@name'] %></li>
+  <% @dead["setlists"]['setlist'].last['sets']['set'][1]['song'].each do |song| %>
+    <li> <%= song['@name'] %></li>
+  <% end %>
+  <li>encore</li>
+  <%= @dead["setlists"]['setlist'].last['sets']['set'][2]['song']['@name'] %>
+</div>
