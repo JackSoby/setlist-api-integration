@@ -1,5 +1,5 @@
-class show < ApplicationRecord
+class Show < ApplicationRecord
 
-   has_many :songs
+   belongs_to :tour
 
 end
